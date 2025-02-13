@@ -4,7 +4,7 @@
     <img src="@/assets/img/Logo.png" alt="logo" class="logo">
     <div class="menu">
         <router-link to="/">Домой</router-link>
-        <router-link to="#">Проект</router-link>
+        <router-link to="/project">Проект</router-link>
         <router-link to="/blog">Блог</router-link>
     </div>
 </header>

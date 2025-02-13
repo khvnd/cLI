@@ -11,7 +11,7 @@
      <div class="pages">
          <h4 class="pages-title">Страницы</h4>
          <router-link to="/">Домой</router-link>
-        <router-link to="#">Проект</router-link>
+        <router-link to="/project">Проект</router-link>
         <router-link to="/blog">Блог</router-link>
      </div>
      <div class="contacts">
