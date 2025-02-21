@@ -3,6 +3,8 @@ import HomePage from "@/pages/HomePage.vue";
 import BlogPage from "@/pages/BlogPage.vue";
 import ArticlesPage from "@/pages/ArticlesPage.vue";
 import ProjectPage from "@/pages/ProjectPage.vue";
+import ProjectArticPage from "@/pages/ProjectArticPage.vue";
+import NotFound from "@/pages/NotFound.vue";
 
 const routes = [
   {
@@ -24,6 +26,16 @@ const routes = [
     path: "/project",
     name: "Project",
     component: ProjectPage
+  },
+  {
+    path: "/article/:id",
+    name: "Article",
+    component: ProjectArticPage,
+    props: true
+  },
+  {
+    path: "/:pathMatch(.*)*", 
+    component: NotFound
   }
 ];
 

@@ -10,7 +10,7 @@
   
       <div class="pagination">
         <button @click="prevPage" :disabled="currentPage === 1">
-          <img src="@/assets/img/arrow2.png" width="5.94px" />
+          <img src="/img/arrow2.png" width="5.94px" />
         </button>
   
         <button v-for="page in totalPages" :key="page" @click="goToPage(page)" :class="{ active: currentPage === page }">
@@ -18,7 +18,7 @@
         </button>
   
         <button @click="nextPage" :disabled="currentPage === totalPages">
-          <img src="@/assets/img/arrow.png" width="5.94px" />
+          <img src="/img/arrow.png" width="5.94px" />
         </button>
       </div>
     </div>
@@ -149,4 +149,72 @@
     }
   };
   </script>
+  <style>
   
+.news-title {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    
+}
+
+.news-block {
+    padding-top: 88px;
+}
+
+.btn-news-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 51px;
+}
+
+
+ 
+.pagination {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 51px;
+    padding-bottom: 200px;
+}
+
+button {
+    width: 52px;
+    height: 52px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: white;
+    color: rgb(41, 47, 54);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button.active {
+    background: #F4F0EC;
+    border: none;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+.news-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 27px;
+    padding-top: 30px;
+}
+
+  </style>

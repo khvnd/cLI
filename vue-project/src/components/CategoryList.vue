@@ -2,22 +2,25 @@
   <div class="articles-category">
     <div  class="articles-project">
       <div v-for="article in paginatedArticles" :key="article.id" class="article-card">
-        <img :src="getImageUrl(article.img)" alt="Статья" class="article-card-img" />
+        <img :src="article.img" alt="Статья" class="article-card-img" />
         <div class="category-item">
         <div class="category-info-item">
           <h3 class="category-subject">{{ article.title }}</h3>
           <p class="category-text">{{ article.description }}</p>
         </div>
         <div class="caterogy-arrow">
-          <button class="category-btn-item">
-            <img src="@/assets/img/arrow.png" alt="Arrow" class="arow-img">
+          <router-link :to="{ name: 'Article', params: { id: article.id }}">
+            <button class="category-btn-item">
+            <img src="/img/arrow.png" alt="Arrow" class="arow-img">
           </button>
+          </router-link>
+          
         </div>
       </div>
       </div>
     </div>
     <div class="pagination">
-      <button @click="prevPage" :disabled="currentPage === 1"><img src="@/assets/img/arrow.png" width="5.94px" /></button>
+      <button @click="prevPage" :disabled="currentPage === 1"><img src="/img/arrow.png" width="5.94px" /></button>
       <button 
         v-for="page in totalPages" 
         :key="page" 
@@ -25,7 +28,7 @@
         :class="{ active: currentPage === page }">
         {{ page }}
       </button>
-      <button @click="nextPage" :disabled="currentPage === totalPages"><img src="@/assets/img/arrow.png" width="5.94px" /></button>
+      <button @click="nextPage" :disabled="currentPage === totalPages"><img src="/img/arrow.png" width="5.94px" /></button>
     </div>
   </div>
   </template>
@@ -38,7 +41,7 @@ export default {
   props: {
     articles: Array,
     
-  },
+  },   
   data() {
     return {
       currentPage: 1,
@@ -56,9 +59,7 @@ export default {
   },
  
   methods: {
-    getImageUrl(img) {
-      return img ? require(`@/assets/img/${img}`) : '';
-    },
+    
     setPage(page) {
       this.currentPage = page;
     },

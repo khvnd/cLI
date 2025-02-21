@@ -41,6 +41,35 @@
   </script>
   
   <style scoped>
-  /* Ваши стили */
+  
+.catalog-info {
+    padding-top: 96px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.text-catalog {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(2, 619px);
+    gap: 56px;
+    padding-bottom: 97px;
+}
   </style>
   

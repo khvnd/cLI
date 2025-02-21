@@ -2,10 +2,10 @@
   <div>
     <footer class="footer">
      <div class="media">
-         <img src="@/assets/img/Logo.png" class="logo">
+         <img src="/img/Logo.png" class="logo">
          <div class="social">
-             <img src="@/assets/img/tw.png">
-             <img src="@/assets/img/in.png">
+             <img src="/img/tw.png">
+             <img src="/img/in.png">
          </div>
      </div>
      <div class="pages">
@@ -31,3 +31,71 @@ export default {
   
 };
 </script>
+<style>
+
+.logo {
+    width: 177px;
+    height: 50px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 101px;
+    padding-top: 33px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 54px;
+    padding-top: 31px;
+   
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.pages-title {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.a-pages {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.contacts {
+    width: 258px;
+    height: 303px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+}
+
+.contacts-title {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.contacts-info {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+}
+</style>

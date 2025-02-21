@@ -37,7 +37,7 @@ export default {
     bottom: 2951px;
     width: 100vw; /* растягиваем на всю ширину экрана */
     height: 356px; /* задаем высоту блока */
-    background-image: url(@/assets/img/bannerProject.png);
+    background-image: url(/public/img/bannerProject.png);
     background-size: cover; /* картинка будет покрывать весь блок */
     background-position: center; /* центрируем изображение */
     z-index: -1; 

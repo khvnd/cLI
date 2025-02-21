@@ -22,5 +22,19 @@
   </script>
   
   <style lang="scss">
-  
+  *, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
   </style>

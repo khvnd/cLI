@@ -55,4 +55,11 @@
   
   <style scoped>
   
+.articles-content {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 52px;
+}
+
   </style>

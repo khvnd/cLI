@@ -48,6 +48,36 @@
   </script>
   
   <style scoped>
-  /* Сюда добавь стили, если нужно */
+  
+.news-info {
+    padding-top: 96px;
+    padding-bottom: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.news-subtitle {
+    color: rgb(41, 47, 54);
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.news-info-text {
+    color: rgb(77, 80, 83);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 27px;
+    padding-top: 30px;
+}
   </style>
   
